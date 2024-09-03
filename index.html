@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Link to CSS file -->
+        <link href="styles.css" rel="stylesheet">
+        <!-- BootStrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <title>Keyboards</title>
+        <script src="common.js" defer></script>
+        <script src="index.js" defer></script>
+    </head>
+    <body>
+        <div class="banner">
+            <div class="menu-container">
+                <button id="menu-button" class="menu-button">
+                    <span class="menu-text">Menu</span>
+                    <div class="barHolder">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </button>
+                <div id ="animated-panel" class = "panel">
+                    <button class = "panelBtn" id = 'index'>Home</button>
+                    <button class = "panelBtn" id = 'switches'>Switches</button>
+                    <button class = "panelBtn" id = 'boards'>Boards +<br>Mounting</button>
+                    <button class = "panelBtn" id = 'keycaps'>Keycaps</button>
+                </div>
+            </div>
+            <div class="container">
+                <h1>Mechanical Keyboards 101</h1>
+                <p>Everything you need to know to get started.</p>
+            </div>
+        </div>
+        <div class ="section1">
+            <h1>What are Keyboards?</h1>
+            <h3>Keyboards are a necessity in the digital age, as conveying thoughts and ideas to others through computers is an integral part
+                of modern life. But as much as we use them, keyboards often get overlooked. So what's going on there? And why do some people
+                spend way too much money to create their own? This page tries to answer these questions along with tips and info on how to build
+                your own.
+            </h3>
+        </div>
+        <div class = "questionHeader">
+            <div class = "question-item">
+                <h2>How would you like the keyboard to feel?</h2>
+            </div>
+            <div class = "question-item">
+                <h2>How much room do you have for a keyboard?</h2>
+            </div>
+            <div class = "question-item">
+                <h2>What kind of sound would you like to hear?</h2>
+            </div>
+        </div>
+        <div class = "questionBody">
+            <div class = "question-column" id = "1">
+                <button class="btn btn-shadow btn-shadow--black" id ="C" data-text = "Linear"> <span>Smooth</span> </button>
+                <button class="btn btn-shadow btn-shadow--black" id ="C" data-text = "Tactile"> <span>Bumpy</span> </button>
+                <button class="btn btn-shadow btn-shadow--black" id ="C" data-text = "Clicky"> <span>Snappy</span> </button>
+            </div>
+            <div class = "question-column" id = "2">
+                <button class="btn btn-shadow btn-shadow--black" id ="B" data-text = "60%"> <span>A little</span> </button>
+                <button class="btn btn-shadow btn-shadow--black" id ="B" data-text = "80%/TKL"> <span>A bit</span> </button>
+                <button class="btn btn-shadow btn-shadow--black" id ="B" data-text = "Full-sized"> <span>A lot</span> </button>
+            </div>
+            <div class = "question-column" id = "3">
+                <button class="btn btn-shadow btn-shadow--black" id ="A" data-text = "Cherry"> <span>Clicky</span> </button>
+                <button class="btn btn-shadow btn-shadow--black" id ="A" data-text = "SA"> <span>Clacky</span> </button>
+                <button class="btn btn-shadow btn-shadow--black" id ="A" data-text = "OEM"> <span>Thocky</span> </button>
+            </div>
+        </div>
+        <div class="questionAnswer">
+            <h2 style = "padding-left = 25px;">You should buy a:</h2>
+            <div class="questionAnswerBlock" id="block1"> </div>
+            <div class="questionAnswerBlock" id="block2"> </div>
+            <h2>keyboard with</h2>
+            <div class="questionAnswerBlock" id="block3"> </div>
+            <h2 style = "padding-right = 35px;">profile keycaps.</h2>
+        </div>
+        <hr class = "divider">
+        <section class = "triSection">
+            <div class = "triSectionSector1">
+                <h1>Switches</h1>
+            <h3>Switches are what physically registers a keypress, and are a critical part to the sound of the keyboard. Learn more about switches
+            <a href = "switches.html">here.</a>
+            </h3>
+            </div>
+            <span></span>
+            <div class = "triSectionSector1">
+                <h1>Boards + Mounting Styles</h1>
+            <h3>The size of your board obviously is a big part of the keyboard, and deciding the right one is important in the process. Mounting
+                styles are how the plate/pcb are set inside the board, affecting sound and feel. Learn more about boards and mounting styles
+            <a href = "boards.html">here.</a>
+            </h3>
+            </div>
+            <span></span>
+            <div class = "triSectionSector1">
+                <h1>Keycaps</h1>
+            <h3>Keycaps are what covers the switches and what your fingers press. They can affect feel, sound, and of course looks. Learn more
+                about keycaps
+            <a href = "keycaps.html">here.</a>
+            </h3>
+            </div>
+        </section>
+        <footer>
+            <p style = "margin-bottom: 0px;">Created by William Judd Ebert as a part of Harvard's CS50x course. Quack Quack.</p>
+        </footer>
+    </body>
+</html>

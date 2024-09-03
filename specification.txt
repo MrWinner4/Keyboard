@@ -1,0 +1,18 @@
+<meta>
+<link>
+<script>
+<title>
+<b>
+<button>
+<span>
+<hr>
+<section>
+<footer>
+
+content
+position
+width
+height
+background
+
+I used bootstrap and Javascript to create a short survey so that the user could find out what kind of keyboard they should use.

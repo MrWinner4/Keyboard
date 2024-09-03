@@ -1,0 +1,373 @@
+/* styles.css */
+/* TODO: fix gray outline when unselecting a button*/
+/* give header on sections a margin at the bottom */
+.darkened {
+    filter: brightness(50%);
+}
+.banner {
+    position: relative;
+    background-image: url('KeyboardImage.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px;
+}
+.menu-container {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 1000;
+}
+
+.menu-button {
+    position: relative;
+    z-index: 4;
+    width: 125px;
+    height: 50px;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.menu-text {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.barHolder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 25px;
+}
+.bar {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 4px 0;
+}
+.panel {
+    z-index: 3;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 125px;
+    height: 200px;
+    position: relative;
+    transition: transform 1.0s ease;
+    transform: translateY(-2000px);
+    padding-bottom: 10px;
+}
+.panelBtn {
+    position: relative;
+    width: 100px;
+    background-color: black;
+    color: white;
+    border-width: 0;
+    text-wrap: nowrap;
+    z-index: 5;
+}
+.panelBtn::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.175rem;
+    background: white;
+    left: 0px;
+    bottom: -10px;
+    width: 0%;
+    z-index: 6;
+    transition: width .5s;
+}
+.panelBtn:hover:after {
+    width: 100%;
+}
+.panel.animate {
+    transform: translateY(0px);
+}
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.banner .container {
+    position: relative;
+    z-index: 2;
+}
+.banner h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.banner p {
+    font-size: 1.25rem;
+}
+.section1 {
+    text-align: center;
+    padding: 225px 50px;
+    background-color: black;
+    position: relative;
+    color: white;
+    overflow: hidden;
+}
+.section1 h1 {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 25px;
+    font-size: 2.5rem;
+}
+.section1 h3 {
+    position: absolute;
+    font-size: 1.5rem;
+    top: 148px;
+    left: 20%;
+    right: 20%;
+    line-height: 3rem;
+}
+.section1 p {
+    text-align: left;
+    position: absolute;
+    left: 100px;
+    right: 50%;
+    max-width: calc(100% - 300px);
+    top: calc(50% + 20px);
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+}
+.section1 img {
+    position: absolute;
+    object-fit: contain;
+    max-width: 350px;
+    max-height: 350px;
+    width: auto;
+    height: auto;
+    left: 83%;
+    top: calc(50% + 20px);
+    transform: translate(-50%, -50%);
+    border: 6px solid rgb(150, 21, 24);
+}
+.section2 {
+    text-align: center;
+    padding: 225px 50px;
+    background-color: white;
+    position: relative;
+    color: black;
+    overflow: hidden;
+}
+.section2 h1 {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.5rem;
+}
+.section2 p {
+    text-align: right;
+    position: absolute;
+    left: 50%;
+    right: 100px;
+    max-width: calc(100% - 300px);
+    top: calc(50% + 20px);
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+}
+.section2 img {
+    position: absolute;
+    object-fit: contain;
+    max-width: 350px;
+    max-height: 350px;
+    width: auto;
+    height: auto;
+    right: 83%;
+    top: calc(50% + 20px);
+    transform: translate(50%, -50%);
+    border: 6px solid rgb(150, 21, 24);
+}
+.questionHeader {
+    display: flex;
+    justify-content: space-between;
+    top: 20px; /* Adjust as needed */
+    background-color: white;
+    color: black;
+    position: relative;
+}
+.question-item {
+    padding: 10px;
+    flex: 1;
+    text-align: center;
+    top: 25px;
+}
+.questionBody {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    color: white;
+    position: relative;
+    top: 20px;
+    padding-bottom: 20px
+}
+.question-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+
+.btn {
+    text-transform: uppercase;
+    }
+
+    .btn:hover .btn-slide-show-text1 {
+    margin-left: 65px;
+    }
+
+    .btn-shadow {
+    display: inline-block;
+    margin: 5px;
+    font-weight: 500;
+    line-height: 24px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    text-align: center;
+    background: none;
+    outline: none;
+    border: none;
+    }
+
+    .btn-shadow::before {
+    content: "";
+    height: 40px;
+    position: absolute;
+    bottom: -1px;
+    left: 10px;
+    right: 10px;
+    z-index: 0;
+    border-radius: 2em;
+    filter: blur(14px) brightness(0.9);
+    background: rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-shadow span {
+    color: rgb(255,255,255);
+    display: inline-block;
+    transform-style: preserve-3d;
+    transition: 0.3s ease-out;
+    padding: 16px 60px;
+    border-radius: 50em;
+    position: relative;
+    z-index: 2;
+    will-change: transform, filter;
+    }
+
+    .btn-shadow:hover {
+    color: rgb(255, 255, 255);
+    }
+
+    .btn-shadow:hover span {
+    filter: brightness(0.9) contrast(1.2);
+    transform: scale(0.96);
+    }
+
+    .btn-shadow:hover::before {
+    bottom: 8px;
+    filter: blur(6px) brightness(0.8);
+    left: 15px;
+    right: 15px;
+    }
+
+    .btn-shadow--black span {
+    background: rgb(51, 51, 51);
+    }
+    .btn-shadow.active span {
+        background: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+    }
+
+.questionAnswer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 10px;
+}
+
+.questionAnswerBlock {
+    border-bottom : 4px solid black;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+    font-size: 2rem;
+}
+.questionAnswer h2 {
+    white-space: nowrap;
+}
+.triSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: white;
+    color: black;
+    position: relative;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.triSectionSector1 {
+    padding-top: 50px 0;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    width: 400px;
+}
+.triSection span {
+    position: relative;
+    width: 10px;
+    background-color: black;
+    border-radius: 99px;
+    margin: 20px 30px;
+}
+.divider {
+    margin: 4rem 50px;
+    border: none;
+    border-top: 10px solid black;
+    border-radius: 99px;
+    opacity: 1;
+}
+ footer {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    background-color: black;
+    color: gray;
+    text-align: left;
+    font-size: .8rem;
+
+}
